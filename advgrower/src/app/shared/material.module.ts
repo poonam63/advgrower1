@@ -40,6 +40,7 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTreeModule} from '@angular/material/tree';
+import { ProductslistComponent } from './components/productslist/productslist.component';
 
 @NgModule({
   exports: [
@@ -86,6 +87,7 @@ import {MatTreeModule} from '@angular/material/tree';
     PortalModule,
     ScrollingModule,
   ],
-  declarations: []
+  declarations: [ProductslistComponent],
+  imports: [MatTableModule, MatPaginatorModule, MatSortModule]
 })
 export class MaterialModule {}
